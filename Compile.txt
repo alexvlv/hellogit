@@ -1,6 +1,9 @@
-If you do need to do this, $Id$ and $Format$ are fairly easy.
+﻿If you do need to do this, $Id$ and $Format$ are fairly easy.
 eee
 +
+
+
+Will be Pull request Русский UTF
 
 git clone https://github.com/openwrt/openwrt
 git fetch --tags
