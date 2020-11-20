@@ -4,6 +4,7 @@ eee
 
 
 Will be Pull request Русский UTF
+Поросто мёрж
 
 git clone https://github.com/openwrt/openwrt
 git fetch --tags
