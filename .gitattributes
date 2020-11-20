@@ -29,7 +29,9 @@
 *.tab text
 *.tsv text
 *.sql text
+
 *.py text
+*.py encoding=utf-8
 
 # Graphics
 *.png binary
@@ -50,4 +52,5 @@
 
 .gitattributes export-ignore
 .gitignore export-ignore
+
 
