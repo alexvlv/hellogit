@@ -1,0 +1,27 @@
+
+git clone https://github.com/openwrt/openwrt
+git fetch --tags
+git tag
+git checkout v18.06.4
+git show
+
+./scripts/feeds update -a
+./scripts/feeds install -a
+
+
+sudo apt install subversion g++ zlib1g-dev build-essential git python python3
+sudo apt install libncurses5-dev gawk gettext unzip file libssl-dev wget
+sudo apt install libelf-dev ecj fastjar java-propose-classpath
+sudo apt install build-essential libncursesw5-dev python unzip  
+https://openwrt.org/docs/guide-developer/quickstart-build-images
+
+
+make -C scripts/config/ clean
+
+sudo apt-get install libncurses-dev
+
+Python missing or unusable error while cross compiling GDB
+sudo apt-get install python2.7-dev
+https://stackoverflow.com/questions/10792844/python-missing-or-unusable-error-while-cross-compiling-gdb
+
+@openwrt  @compiler
