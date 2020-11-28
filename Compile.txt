@@ -1,6 +1,16 @@
-﻿If you do need to do this, $Id$ and $Format$ are fairly easy.
+﻿If you do need to do this, $Id$
+
+[ $All ]
+[ $Date ]
+[ $Author ]
+[ $Source ]
+[ $File ]
+[ $Revision ]
+[ $Version ]
+
 eee
 +
+
 
 
 Will be Pull request Русский UTF
