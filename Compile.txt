@@ -10,6 +10,11 @@ If you do need to do this, $Id$
 [ $Revision ]
 [ $Version ]
 
+/* @date   $Format: %ci$
+ * @version Commit: $Format: %h$
+ * Tree: $Format: %t$
+ */
+
 eee ewrwetrweawet
 +
     xfgfsdgfd
