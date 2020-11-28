@@ -1,6 +1,35 @@
-﻿If you do need to do this, $Id$ and $Format$ are fairly easy.
-eee
+﻿sss
+ 
+If you do need to do this, $Id$
+
+[ $All ]
+[ $Date ]
+[ $Author ]
+[ $Source ]
+[ $File ]
+[ $Revision ]
+[ $Version ]
+
+https://git-memo.readthedocs.io/en/latest/git_archive.html
+
+The place holders are defined in git log pretty formats
+https://www.kernel.org/pub/software/scm/git/docs/git-log.html#_pretty_formats
+
+t:"The author of $Format: %h$  was $Format: %an$, $Format: %ar$  %n The title was >>$Format: %s$<<%n" 
+$Format: %H$
+$Format: %T$
+$Format: %cs$
+
+/* @date   $Format: %ci$
+	Author : %an,
+ * @version Commit: $Format: %h$
+ * Tree: $Format: %t$
+ */
+
+eee ewrwetrweawet
 +
+    xfgfsdgfd
+
 
 
 Will be Pull request Русский UTF

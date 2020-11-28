@@ -4,6 +4,7 @@
 * text=auto
 
 *.txt ident
+*.txt export-subst
 
 #
 # Строка выше будет обрабатывать все файлы, которых нет в списке ниже.
@@ -52,5 +53,12 @@
 
 .gitattributes export-ignore
 .gitignore export-ignore
+
+
+# Map file extensions to git filters : to expand keywords
+
+*.py filter=mc-keywords
+*.txt  filter=mc-keywords
+*.ui filter=mc-keywords
 
 
