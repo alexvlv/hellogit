@@ -1,0 +1,46 @@
+#!/usr/bin/perl
+#
+# @brief  Git filter to implement rcs keyword expansion as seen in cvs and svn.
+# @author Martin Turon & LRO
+#
+# Usage:
+#    .git_filter/rcs-keywords.smudge file_path < file_contents
+# 
+# Copyright (c) 2009-2011 Turon Technologies, Inc.  All rights reserved.
+
+$path = shift;
+$path =~ /.*\/(.*)/;
+$filename = $1;
+
+if (0 == length($filename)) {
+	$filename = $path;
+}
+
+# Need to grab filename and to use git log for this to be accurate.
+$rev = `git log --decorate -- $path | head -n 3`;
+$rev =~ /^Author:\s*(.*)\s*$/m;
+$author = $1;
+$author =~ /\s*(.*)\s*<.*/;
+$name = $1;
+$rev =~ /^Date:\s*(.*)\s*$/m;
+$date = $1;
+$rev =~ /^commit (.*)$/m;
+$ident = $1;
+if ($rev =~ /\s*\(tag:\s*(.*)\)$/m) {
+	$version = $1;
+} else {
+	$version = "";
+}
+
+while (<STDIN>) {
+    s/\$Date[^\$]*\$/\$Date:   $date \$/;
+    s/\$Author[^\$]*\$/\$Author: $author \$/;
+    s/\$All[^\$]*\$/\$All: $filename | $date | $name \$/;
+    s/\$File[^\$]*\$/\$File:   $filename \$/;
+    s/\$Source[^\$]*\$/\$Source: $path \$/;
+    s/\$Revision[^\$]*\$/\$Revision: $ident \$/;
+    s/\$Version[^\$]*\$/\$Version: $version \$/;
+} continue {
+    print or die "-p destination: $!\n";
+}
+

@@ -54,3 +54,10 @@
 .gitignore export-ignore
 
 
+# Map file extensions to git filters : to expand keywords
+
+*.py filter=mc-keywords
+*.txt  filter=mc-keywords
+*.ui filter=mc-keywords
+
+
