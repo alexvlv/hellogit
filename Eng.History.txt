@@ -1,5 +1,25 @@
 WEb Edit
 
+/* @date   $Format: %ci$
+ * @version Commit: $Format: %h$
+ * Tree: $Format: %t$
+ */
+
+
+[$Id$]
+
+t:"The author of $Format: %h$  was $Format: %an$, $Format: %ar$  %n The title was >>$Format: %s$<<%n" 
+$Format: %H$
+$Format: %T$
+$Format: %cs$
+
+/* @date   $Format: %ci$
+	Author : %an,
+ * @version Commit: $Format: %h$
+ * Tree: $Format: %t$
+ */
+
+
 XuBuntu Done
 XuBuntu Begin
 F 2 done
