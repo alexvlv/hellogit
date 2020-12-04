@@ -6,6 +6,12 @@
 *.txt ident
 *.txt export-subst
 
+*.c ident
+*.c export-subst
+
+*.h ident
+*.h export-subst
+
 #
 # Строка выше будет обрабатывать все файлы, которых нет в списке ниже.
 #
