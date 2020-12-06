@@ -8,9 +8,15 @@
 
 *.c ident
 *.c export-subst
+*.h text
 
 *.h ident
 *.h export-subst
+*.h text
+
+*.py ident
+*.py export-subst
+*.py text
 
 #
 # Строка выше будет обрабатывать все файлы, которых нет в списке ниже.
