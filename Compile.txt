@@ -29,8 +29,10 @@ $Format: %cs$
 eee ewrwetrweawet
 +
     xfgfsdgfd
-
-
+	
+Line one
+Line zwei
+Line three
 
 Will be Pull request Русский UTF
 Поросто мёрж
