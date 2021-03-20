@@ -1,6 +1,7 @@
 ﻿sss
 
 Commit 1 for rebase
+Commit 1 for reorder
  
 If you do need to do this, $Id$
 
