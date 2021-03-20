@@ -1,4 +1,5 @@
 Commit 2 for rebase
+Commit 2 for reorder
 
 $Id$
 
